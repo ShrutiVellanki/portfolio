@@ -16,15 +16,15 @@ export class MainPageComponent {
     },
     {
       title: 'HTML',
-      percentage: 49,
+      percentage: 29,
     },
     {
       title: 'CSS',
-      percentage: 49,
+      percentage: 95,
     },
     {
       title: 'Python',
-      percentage: 49,
+      percentage: 10,
     }
   ];
 

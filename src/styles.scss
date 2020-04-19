@@ -1,33 +1,83 @@
-
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
-// Plus imports for other components in your app.
 @import 'palette.scss';
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 @include mat-core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$primary-light: mat-palette($mat-grey);
-$accent-light: mat-palette($mat-teal);
+// Material Theme Colors 
+$primary-light: mat-palette($mat-teal);
+$accent-light: mat-palette($mat-grey);
 $warn-light: mat-palette($mat-amber);
-
-// Create the theme object (a Sass map containing all of the palettes).
 $shruti-portfolio-theme: mat-light-theme($primary-light, $accent-light, $warn-light);
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
 @include angular-material-theme($shruti-portfolio-theme);
 
-/* You can add global styles to this file, and also import other style files */
+// Screen Sizes
+$s-xxx-large: 1900px;
+$s-xx-large: 1640px;
+$s-x-large: 1366px;
+$s-large: 1128px;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$s-medium-large: 940px;
+$s-medium: 768px;
+$s-medium-small: 640px;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$s-small: 520px;
+$s-x-small: 375px;
+$s-xx-small: 360px;
+$s-xxx-small: 320px;
+
+// Font Sizes
+$f-xxx-huge: 60px;
+$f-xx-huge: 48px;
+$f-x-huge: 36px;
+$f-huge: 28px;
+
+$f-xx-large: 26px;
+$f-x-large: 24px;
+$f-large: 22px;
+
+$f-small: 14px;
+$f-x-small: 13px;
+$f-xx-small: 11px;
+
+// Font Weights
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+// Font Family
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Josefin Sans', sans-serif;
+
+// Other Styles
+html, body { 
+    width: 300px;
+    margin: 70px auto 0 auto;
+    font-family: $font-family-primary!important;
+
+    h1, h2, h3, h4, h5 {
+        font-family: $font-family-secondary!important;
+    }
+
+    @media (min-width: $s-small) {
+        width: $s-x-small!important;
+        
+    }
+
+    @media (min-width: $s-medium-small) {
+        width: $s-small!important;
+    }
+
+    @media (min-width: $s-medium) {
+        width: $s-medium-small!important;
+    }
+
+    @media (min-width: $s-medium-large) {
+        width: $s-medium!important;
+    }
+
+    @media (min-width: $s-large) {
+        width: $s-medium-large!important;
+    }
+}

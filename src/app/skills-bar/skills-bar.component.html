@@ -1,3 +1,4 @@
 <div *ngFor="let skill of skills">
     <li>{{ skill.title }}</li>
+    <mat-progress-bar mode="determinate" [value]="skill.percentage"></mat-progress-bar>
 </div>

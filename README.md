@@ -21,10 +21,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
             - `project-title`
                 - < Title >
                 - < Image >
-                - `skills-bar`
+                - `project-skill-tags`
             - `page-section`
                 - < Case Study >
     - `footer`
-
-
-# Project Page
