@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PageSectionComponent implements OnInit {
 
-  @Input() content;
+  @Input() header;
   
   constructor() { }
 

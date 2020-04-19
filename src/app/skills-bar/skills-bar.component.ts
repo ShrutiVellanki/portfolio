@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skills-bar',
   templateUrl: './skills-bar.component.html',
   styleUrls: ['./skills-bar.component.scss']
 })
-export class SkillsBarComponent implements OnInit {
+export class SkillsBarComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() skills;
 
 }

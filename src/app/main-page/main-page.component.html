@@ -1,1 +1,20 @@
-<p>main-page works!</p>
+<app-page-hero></app-page-hero>
+
+<app-page-section header="Intro">
+    <p *ngFor="let content of introContentList">
+        {{ content }}
+    </p>
+</app-page-section>
+
+<app-page-section header="Skills">
+    <app-skills-bar [skills]="skillsList"></app-skills-bar>
+</app-page-section>
+
+<app-page-section header="Experience">
+    <app-experience-entry [experiences]="experienceList"></app-experience-entry>
+</app-page-section>
+
+<app-page-section header="Projects">
+    <app-project-cards-grid [projects]="projectsList"></app-project-cards-grid>
+</app-page-section>
+

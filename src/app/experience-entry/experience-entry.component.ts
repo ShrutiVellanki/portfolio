@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience-entry',
   templateUrl: './experience-entry.component.html',
   styleUrls: ['./experience-entry.component.scss']
 })
-export class ExperienceEntryComponent implements OnInit {
+export class ExperienceEntryComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() experiences;
 
 }
