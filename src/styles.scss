@@ -51,36 +51,19 @@ $font-family-primary: 'Montserrat', sans-serif;
 $font-family-secondary: 'Josefin Sans', sans-serif;
 
 // Other Styles
-html, body { 
-    width: 300px;
-    margin: 70px auto 0 auto;
-    font-family: $font-family-primary!important;
-
-    h1, h2, h3, h4, h5 {
-        font-family: $font-family-secondary!important;
-    }
-
-    @media (min-width: $s-small) {
-        width: $s-x-small!important;
-        
-    }
-
-    @media (min-width: $s-medium-small) {
-        width: $s-small!important;
-    }
-
-    @media (min-width: $s-medium) {
-        width: $s-medium-small!important;
-    }
-
-    @media (min-width: $s-medium-large) {
-        width: $s-medium!important;
-    }
-
-    @media (min-width: $s-large) {
-        width: $s-medium-large!important;
+::ng-deep .mat-body {
+    .mat-toolbar, .mat-typography { 
+        font: $font-family-primary!important;
+    
+        .mat-toolbar, .mat-typography
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $font-family-secondary!important;
+            font-weight: $fw-semi-bold;
+        }
     }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body {
+    margin: 0;
+}

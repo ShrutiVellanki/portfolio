@@ -1,1 +1,15 @@
-<p>page-header works!</p>
+<div class="example-container">
+    <mat-toolbar color="primary" class="example-toolbar">
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+        <h1 class="example-app-name">Responsive App</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container>
+        <mat-sidenav color="secondary" #snav mode="'over'" fixedTopGap="56">
+            <mat-nav-list>
+                <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content (click)="snav.toggle()" [class.mat-drawer-shown]="opened" class="mat-drawer-backdrop"></mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

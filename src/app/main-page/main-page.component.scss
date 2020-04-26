@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+.main-page {    
+    margin: auto;
+    height: 100%; 
+
+    @media (min-width: $s-small) {
+        width: $s-x-small!important;
+    }
+
+    @media (min-width: $s-medium-small) {
+        width: $s-small!important;
+    }
+
+    @media (min-width: $s-medium) {
+        width: $s-medium-small!important;
+    }
+
+    @media (min-width: $s-medium-large) {
+        width: $s-medium!important;
+    }
+
+    @media (min-width: $s-large) {
+        width: $s-medium-large!important;
+    }
+}
+
+
+
+
