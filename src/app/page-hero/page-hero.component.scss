@@ -12,9 +12,36 @@
         justify-content: center;
         height: 100%;
 
-        h1, p {
+        h1, h2 {
             @include margin-x(auto);
             width: 90%;
+        }
+
+        .mat-display-2 {
+            display: block;
+            margin-bottom: 20px!important;
+        }
+
+        h1, .mat-display-4 {
+            display: none;
+        }
+    }
+}
+
+
+@media(min-width: $s-medium-large) {
+    .page-hero {
+        .hero-content {
+            h1, .mat-display-4 {
+                display: block;
+            }
+            .mat-display-4 {
+                margin-bottom: 20px!important;
+            }
+
+            h2, .mat-display-2 {
+                display: none;
+            }
         }
     }
 }
