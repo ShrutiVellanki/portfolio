@@ -25,6 +25,7 @@ import { ProjectEconoglobeComponent } from './project-econoglobe/project-econogl
 import { StyleGuideComponent } from './style-guide/style-guide.component';
 import { ExperienceEntryComponent } from './experience-entry/experience-entry.component';
 import { CommonModule } from '@angular/common';
+import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
 // This makes the examples that use MatFormField render the same in StackBlitz as on the docs site.
@@ -47,6 +48,7 @@ import { CommonModule } from '@angular/common';
     routingComponents,
     StyleGuideComponent,
     ExperienceEntryComponent,
+    ScrollAnimationComponent,
   ],
   imports: [
     BrowserModule,
