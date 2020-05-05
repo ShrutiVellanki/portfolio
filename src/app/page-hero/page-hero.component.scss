@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .page-hero {
     height: 95vh;
     text-align: center;
@@ -9,5 +11,10 @@
         flex-flow: column;
         justify-content: center;
         height: 100%;
+
+        h1, p {
+            @include margin-x(auto);
+            width: 90%;
+        }
     }
 }

@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .example-container {
     position: absolute;
     display: flex;
@@ -26,7 +28,6 @@ mat-sidenav-content {
     width: 100vw;
     color: black;
 }
-
 
 mat-toolbar {
     position: fixed;
