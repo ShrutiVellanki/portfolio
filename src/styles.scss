@@ -71,18 +71,6 @@ $font-family-secondary: 'Josefin Sans', sans-serif;
     padding-bottom: $padding;
 }
 
-::ng-deep .mat-body {
-    .mat-toolbar, .mat-typography { 
-        font: $font-family-primary!important;
-    
-        .mat-toolbar, .mat-typography
-        h1, h2, h3, h4, h5, h6 {
-            font-family: $font-family-secondary!important;
-            font-weight: $fw-semi-bold;
-        }
-    }
-}
-
 // Other Styles
 html, body {
     margin: 0;
