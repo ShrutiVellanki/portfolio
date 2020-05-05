@@ -12,14 +12,15 @@
         justify-content: center;
         height: 100%;
 
-        h1, h2 {
+        h1, h3 {
             @include margin-x(auto);
-            width: 90%;
+            width: 300px;
         }
 
         .mat-display-2 {
             display: block;
             margin-bottom: 20px!important;
+            font-family: $font-family-secondary!important;
         }
 
         h1, .mat-display-4 {
@@ -28,6 +29,16 @@
     }
 }
 
+@media (min-width: $s-xx-small) {
+    .page-hero {
+        .hero-content {
+            h1, h3 {
+                @include margin-x(auto);
+                width: 320px;
+            }
+        }
+    }
+}
 
 @media(min-width: $s-medium-large) {
     .page-hero {
@@ -35,11 +46,17 @@
             h1, .mat-display-4 {
                 display: block;
             }
+
+            h1 {
+                width: 500px;
+            }
+
             .mat-display-4 {
+                font-family: $font-family-secondary!important;
                 margin-bottom: 20px!important;
             }
 
-            h2, .mat-display-2 {
+            h3, .mat-display-2 {
                 display: none;
             }
         }

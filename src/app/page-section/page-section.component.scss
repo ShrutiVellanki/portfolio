@@ -2,4 +2,8 @@
 
 .page-section {
     @include margin-y(40px);
+
+    h1 {
+        font-family: $font-family-secondary!important;
+    }
 }
