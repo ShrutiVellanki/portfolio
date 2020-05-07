@@ -4,10 +4,14 @@
     >
         <mat-expansion-panel-header>
             <mat-panel-title>
-                {{ experience.jobTitle }}
+                <b>{{ experience.jobTitle }}</b>
+                <p>{{ experience.company }}</p>
+                <p class="date mat-expansion-panel-header-description">{{ experience.date }}</p>
             </mat-panel-title>
             <mat-panel-description>
-                {{ experience.company }}
+                <p>
+                    {{ experience.date }}
+                </p>
             </mat-panel-description>
         </mat-expansion-panel-header>
 

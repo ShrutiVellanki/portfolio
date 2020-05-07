@@ -3,4 +3,45 @@
 .entry {
     margin-top: 30px;
     background-color: whitesmoke;
+
+    mat-expansion-panel-header[style] {
+        height: 78px!important;
+
+        mat-panel-title {
+            display: flex;
+            flex-direction: column;
+            p {
+                margin: 0!important;
+            }
+        }
+
+        mat-panel-description {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $s-small) {
+    .entry {
+        mat-expansion-panel-header[style] {
+            height: 68px!important;
+
+            mat-panel-title {
+                .date {
+                    display: none;
+                }
+            }
+
+            mat-panel-description {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 30px;
+
+                p {
+                    @include margin-y(auto);
+                }
+            }
+            
+        }
+    }
 }
