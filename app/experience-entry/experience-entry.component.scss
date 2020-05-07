@@ -2,16 +2,23 @@
 
 .entry {
     margin-top: 30px;
-    background-color: whitesmoke;
+    background-color: $secondary;
+
+    ul {
+        margin-bottom: 30px;
+        li {
+            margin-top: 10px;
+        }
+    }
 
     mat-expansion-panel-header[style] {
-        height: 78px!important;
+        height: 108px!important;
 
         mat-panel-title {
             display: flex;
             flex-direction: column;
             p {
-                margin: 0!important;
+                margin: 0 0 4px;
             }
         }
 
@@ -24,7 +31,7 @@
 @media (min-width: $s-small) {
     .entry {
         mat-expansion-panel-header[style] {
-            height: 68px!important;
+            height: 88px!important;
 
             mat-panel-title {
                 .date {
