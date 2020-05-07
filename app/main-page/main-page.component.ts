@@ -40,22 +40,19 @@ export class MainPageComponent {
   experienceList = [
     {
       jobTitle: 'Software Developer',
-      startDate: 'April 1st, 2020',
-      endDate: 'April 2nd 2020',
+      date: 'Jun. 2020 - Sept. 2021',
       company: 'XYZ Corp',
       description: 'Built a bunch of shit',
     },
     {
       jobTitle: 'Software Engineer',
-      startDate: 'April 1st, 2020',
-      endDate: 'April 2nd 2020',
+      date: 'Jun. 2020 - Sept. 2021',
       company: 'XYZ Corp',
       description: 'Built a bunch of shit',
     },
     {
       jobTitle: 'Web Developer',
-      startDate: 'April 1st, 2020',
-      endDate: 'April 2nd 2020',
+      date: 'Jun. 2020 - Sept. 2021',
       company: 'XYZ Corp',
       description: 'Built a bunch of shit',
     },
