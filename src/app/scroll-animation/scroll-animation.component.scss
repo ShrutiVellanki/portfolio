@@ -9,7 +9,7 @@
     width: 2px;
     padding: 6px 9px;
     height: 21px;
-    border: 2px solid #ffc107;
+    border: 2px solid $primary;
     border-radius: 15px;
     opacity: 0.75;
     box-sizing: content-box;
@@ -25,7 +25,7 @@
     width: 2px;
     height: 6px;
     border-radius: 25%;
-    background-color: #ffc107;
+    background-color: $primary;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);

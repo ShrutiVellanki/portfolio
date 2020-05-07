@@ -4,7 +4,7 @@ mat-card {
     height: 300px;
     width: 250px;
     margin: 30px 30px 30px 0;
-    background-color: whitesmoke!important;
+    background-color: $secondary!important;
 
     @media (min-width: $s-xx-small) {
         width: 270px;
