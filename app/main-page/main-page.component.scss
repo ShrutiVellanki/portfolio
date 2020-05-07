@@ -10,6 +10,10 @@
         display: block;
     }
 
+    .intro {
+        margin-top: 30px;
+    }
+
     @media (min-width: $s-small) {
         width: $s-x-small!important;
     }
