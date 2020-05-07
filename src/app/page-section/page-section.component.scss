@@ -8,4 +8,9 @@
         font-family: $font-family-secondary!important;
         font-weight: 500;
     }
+
+    mat-divider {
+        background-color: #ffc107;
+        border-top-color: none;
+    }
 }
