@@ -1,3 +1,7 @@
-<div *ngFor="let project of projects" class="project">
-    <app-project-cards [project]="project"></app-project-cards>
+<div *ngIf="projectPairs.length">
+<div *ngFor="let pair of projectPairs" class="pair">
+    <div *ngFor="let project of pair" class="project">
+        <app-project-cards [project]="project"></app-project-cards>
+    </div>
+</div>
 </div>
