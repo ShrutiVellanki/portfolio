@@ -17,14 +17,14 @@
             width: 300px;
         }
 
-        .mat-display-2 {
+        .mat-display-1 {
             display: block;
             margin-bottom: 20px!important;
             font-family: $font-family-secondary!important;
             font-weight: 500;
         }
 
-        h1, .mat-display-4 {
+        h1, h2, .mat-display-4, .mat-display-3 {
             display: none;
         }
 
@@ -37,9 +37,23 @@
 @media (min-width: $s-xx-small) {
     .page-hero {
         .hero-content {
-            h1, h3 {
+            h1, h2, h3 {
                 @include margin-x(auto);
                 width: 320px;
+            }
+
+            h2, .mat-display-3 {
+                display: block;
+            }
+
+            .mat-display-3 {
+                font-family: $font-family-secondary!important;
+                margin-bottom: 20px!important;
+                font-weight: 500;
+            }
+
+            h3, .mat-display-1 {
+                display: none;
             }
         }
     }
@@ -62,7 +76,7 @@
                 font-weight: 500;
             }
 
-            h3, .mat-display-2 {
+            h2, .mat-display-3 {
                 display: none;
             }
         }
