@@ -3,8 +3,8 @@
 .page-hero {
     height: 100vh;
     text-align: center;
-    background-color: #009688;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
 
     .hero-content {
         display: flex;
@@ -26,6 +26,10 @@
 
         h1, .mat-display-4 {
             display: none;
+        }
+
+        app-scroll-animation {
+            margin-top: 40px;
         }
     }
 }

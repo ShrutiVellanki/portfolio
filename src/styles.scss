@@ -6,8 +6,8 @@
 @include mat-core();
 
 // Material Theme Colors 
-$primary-light: mat-palette($mat-teal);
-$accent-light: mat-palette($mat-grey);
+$primary-light: mat-palette($mat-grey, 50);
+$accent-light: mat-palette($mat-amber);
 $warn-light: mat-palette($mat-amber);
 $shruti-portfolio-theme: mat-light-theme($primary-light, $accent-light, $warn-light);
 @include angular-material-theme($shruti-portfolio-theme);
