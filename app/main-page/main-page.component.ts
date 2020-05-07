@@ -72,7 +72,7 @@ export class MainPageComponent {
       skills: ['html', 'css', 'javascript'],
     },
     {
-      projectTitle: 'Weather App',
+      projectTitle: 'Snack Hacks',
       picture: 'April 1st, 2020',
       demoLink: 'April 2nd 2020',
       caseStudyLink: 'XYZ Corp',
@@ -81,6 +81,14 @@ export class MainPageComponent {
     },
     {
       projectTitle: 'Mood Diary',
+      picture: 'April 1st, 2020',
+      demoLink: 'April 2nd 2020',
+      caseStudyLink: 'XYZ Corp',
+      description: 'Built a bunch of shit',
+      skills: ['html', 'css', 'javascript'],
+    },
+    {
+      projectTitle: 'RAMP Datagrid',
       picture: 'April 1st, 2020',
       demoLink: 'April 2nd 2020',
       caseStudyLink: 'XYZ Corp',
