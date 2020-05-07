@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent {
 
-  introContentList = [`Intro Content`, `IntroContent2`];
+  introContentList = [
+                       `"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`, 
+                        `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`];
   
   skillsList = [
     {
@@ -59,7 +68,7 @@ export class MainPageComponent {
       picture: 'April 1st, 2020',
       demoLink: 'April 2nd 2020',
       caseStudyLink: 'XYZ Corp',
-      description: 'Built a bunch of shit',
+      description: 'Built a bunch of shit Built a bunch of shit Built a bunch of shit',
       skills: ['html', 'css', 'javascript'],
     },
     {

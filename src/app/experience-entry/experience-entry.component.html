@@ -1,3 +1,16 @@
 <div *ngFor="let experience of experiences">
-    <li>{{ experience.jobTitle }}</li>
+    <mat-expansion-panel 
+        class="entry"
+    >
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{ experience.jobTitle }}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{ experience.company }}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
 </div>

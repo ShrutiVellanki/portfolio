@@ -5,12 +5,21 @@
     width: 290px;
     height: 100%; 
 
+    .projects {
+        width: 100%;
+        display: block;
+    }
+
     @media (min-width: $s-small) {
         width: $s-x-small!important;
     }
 
     @media (min-width: $s-medium-small) {
         width: $s-small!important;
+
+        .projects {
+            display: flex;
+        }
     }
 
     @media (min-width: $s-medium) {
