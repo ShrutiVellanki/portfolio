@@ -8,4 +8,10 @@ import { Component, Input } from '@angular/core';
 export class ProjectCardsGridComponent {
 
   @Input() projects;
+  pairs = [];
+
+  get projectPairs() {
+    while(this.projects.length) this.pairs.push(this.projects.splice(0,2));
+    return this.pairs;
+  }
 }

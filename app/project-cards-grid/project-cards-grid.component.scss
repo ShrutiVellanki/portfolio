@@ -1,1 +1,12 @@
 @import '../../styles.scss';
+
+.pair {
+    max-width: 640px;
+    margin: auto;
+    @media (min-width: $s-medium) {
+        display: flex;
+        .project {
+            flex: 1;
+        }
+    }
+}
