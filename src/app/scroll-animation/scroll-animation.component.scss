@@ -1,28 +1,40 @@
+@import '../../styles.scss';
 
 .scroll-downs {
     margin: auto;
-    
     width :34px;
     height: 55px;
   }
   .mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
+    width: 2px;
+    padding: 6px 9px;
+    height: 21px;
     border: 2px solid #ffc107;
-    border-radius: 25px;
+    border-radius: 15px;
     opacity: 0.75;
     box-sizing: content-box;
+
+    @media(min-width: $s-medium-large) {
+      width: 3px;
+      padding: 10px 15px;
+      height: 35px;
+      border-radius: 25px;
+    }
   }
   .scroller {
-    width: 3px;
-    height: 10px;
+    width: 2px;
+    height: 6px;
     border-radius: 25%;
     background-color: #ffc107;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
     animation-iteration-count: infinite;
+
+    @media(min-width: $s-medium-large) {
+      width: 3px;
+      height: 10px;
+    }
   }
   @keyframes scroll {
     0% { opacity: 0; }
