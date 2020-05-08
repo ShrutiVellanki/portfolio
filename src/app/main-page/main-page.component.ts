@@ -8,33 +8,50 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent {
 
   introContentList = [
-                       `"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`, 
-                        `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`];
+                       `Hello! My name is Shruti Vellanki and I am a <b>Front-End Developer</b> living and working in <b>Toronto, Canada</b>. I like building beautiful and responsive User Interfaces that ensure a great User Experience. I am most interested in <b>Human Computer Interaction</b>, <b>Web Accessibility</b> and <b>User Experience Design</b>.`, 
+                        `In my free time you can find me learning about psychology, playing board games with friends, biking, or trying out a new recipe!`];
   
   skillsList = [
     {
-      title: 'Javascript',
-      percentage: 49,
-    },
-    {
-      title: 'HTML',
-      percentage: 29,
-    },
-    {
-      title: 'CSS',
+      title: 'Javascript (ES6) and Typescript',
       percentage: 95,
     },
     {
+      title: 'CSS and SCSS',
+      percentage: 95,
+    },
+    {
+      title: 'Git',
+      percentage: 90,
+    }, 
+    {
+      title: 'Chrome DevTools',
+      percentage: 85,
+    },
+    {
+      title: 'BrowserStack',
+      percentage: 80,
+    }, 
+    {
+      title: 'Angular and AngularJS',
+      percentage: 75,
+    },
+    {
       title: 'Python',
-      percentage: 10,
-    }
+      percentage: 50,
+    },
+    {
+      title: 'Java',
+      percentage: 40,
+    },
+    {
+      title: 'Apollo GraphQL',
+      percentage: 25,
+    },  
+    {
+      title: 'Sketch and Figma',
+      percentage: 15,
+    },    
   ];
 
   experienceList = [
@@ -82,7 +99,7 @@ export class MainPageComponent {
   projectsList = [
     {
       projectTitle: 'Econoglobe',
-      picture: 'April 1st, 2020',
+      picture: 'econoglobe',
       demoLink: 'April 2nd 2020',
       caseStudyLink: 'XYZ Corp',
       description: 'Built a bunch of shit Built a bunch of shit Built a bunch of shit',
