@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: $s-small) {
+@media (min-width: $s-medium-small) {
     .entry {
         mat-expansion-panel-header[style] {
             height: 88px!important;
