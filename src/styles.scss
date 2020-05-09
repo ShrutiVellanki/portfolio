@@ -59,6 +59,7 @@ $custom-typography: mat-typography-config(
 );
 
 @include angular-material-typography($custom-typography);
+@include mat-card-typography($custom-typography);
 
 // Mixins
 @mixin margin-x($margin) {
