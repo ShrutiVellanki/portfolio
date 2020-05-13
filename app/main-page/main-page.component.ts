@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent {
 
   introContentList = [
-                       `Hello! My name is Shruti Vellanki and I am a <b>Front-End Developer</b> living and working in <b>Toronto, Canada</b>. I like building beautiful and responsive User Interfaces that ensure a great User Experience. I am most interested in <b>Human Computer Interaction</b>, <b>Web Accessibility</b> and <b>User Experience Design</b>.`, 
+                       `Hello! My name is Shruti Vellanki and I am a <strong>Front-End Developer</strong> living and working in <strong>Toronto, Canada</strong>. I like building beautiful and responsive User Interfaces that ensure a great User Experience. I am most interested in <strong>Human Computer Interaction</strong>, <strong>Web Accessibility</strong> and <strong>User Experience Design</strong>.`, 
                         `In my free time you can find me learning about psychology, playing board games with friends, biking, or trying out a new recipe!`];
   
   skillsList = [
@@ -71,12 +71,12 @@ export class MainPageComponent {
       company: 'Intersect',
       employmentType: 'Internship',
       list: [
-              `Feature development working with a <b>large agile software development team</b> building an <b>enterprise application with Angular</b> (started with Angular 8, stayed the migration path to the latest version)`,
-              `Involvement on team included using <b>Typescript</b>, <b>HTML</b>, <b>SCSS</b> and <b>Angular</b> in order to build an average of 2 major features per sprint`,
-              `Reduced redundancies in the code base and maintained project consistency by creating <b>reusable Angular components</b> for UIs such as navigation bars and card widgets`,
-              `Leveraged <b>Apollo GraphQL</b> in order to mock data which allowed for the rapid creation of functional UIs without waiting for the back-end to be developed`,
-              `Supported the development of a process for building and validating features for <b>accessibility compliance</b> to <b>WCAG level 2.1</b> for the project`,
-              `Tested for <b>accessibility</b> and <b>cross-browser compatibility</b> during development and code reviews by using a <b>screen reader</b>, <b>aXe scans</b> and <b>BrowserStack</b>`,
+              `Feature development working with a <strong>large agile software development team</strong> building an <strong>enterprise application with Angular</strong> (started with Angular 8, stayed the migration path to the latest version)`,
+              `Involvement on team included using <strong>Typescript</strong>, <strong>HTML</strong>, <strong>SCSS</strong> and <strong>Angular</strong> in order to build an average of 2 major features per sprint`,
+              `Reduced redundancies in the code base and maintained project consistency by creating <strong>reusable Angular components</strong> for UIs such as navigation bars and card widgets`,
+              `Leveraged <strong>Apollo GraphQL</strong> in order to mock data which allowed for the rapid creation of functional UIs without waiting for the back-end to be developed`,
+              `Supported the development of a process for building and validating features for <strong>accessibility compliance</strong> to <strong>WCAG level 2.1</strong> for the project`,
+              `Tested for <strong>accessibility</strong> and <strong>cross-browser compatibility</strong> during development and code reviews by using a <strong>screen reader</strong>, <strong>aXe scans</strong> and <strong>BrowserStack</strong>`,
       ],
       skills: ['HTML', 'SCSS', 'Typescript', 'Angular', 'Apollo GraphQL', 'Karma', 'BrowserStack'],
     },
@@ -86,10 +86,10 @@ export class MainPageComponent {
       company: 'Environment Canada',
       employmentType: 'Internship',
       list: [
-            `Used <b>Typescript</b>, <b>HTML</b>, <b>SCSS</b>, <b>AngularJS</b> and the <b>ArcGIS API</b> to build a map integration that allows users to bookmark geographic areas as well as view relevant data about their bookmarked areas`,
-            `Supported the development of a responsive datatable that supports user file uploads and URLs in a variety of formats (<b>CSV</b>, <b>JSON</b> and <b>Shapefile</b>) and presents the data in an interactive and easy-to-digest manner`,
-            `Took initiative to document accessibility guidelines in order to ensure compliance with  <b>WCAG level 2.0</b>, which cut down QA reports of accessibility-related bugs in half`,
-            `Wrote <b>unit tests using Jasmine</b> as well as <b>UI tests using WebdriverIO</b> to detect flaws in logic`,
+            `Used <strong>Typescript</strong>, <strong>HTML</strong>, <strong>SCSS</strong>, <strong>AngularJS</strong> and the <strong>ArcGIS API</strong> to build a map integration that allows users to bookmark geographic areas as well as view relevant data about their bookmarked areas`,
+            `Supported the development of a responsive datatable that supports user file uploads and URLs in a variety of formats (<strong>CSV</strong>, <strong>JSON</strong> and <strong>Shapefile</strong>) and presents the data in an interactive and easy-to-digest manner`,
+            `Took initiative to document accessibility guidelines in order to ensure compliance with  <strong>WCAG level 2.0</strong>, which cut down QA reports of accessibility-related bugs in half`,
+            `Wrote <strong>unit tests using Jasmine</strong> as well as <strong>UI tests using WebdriverIO</strong> to detect flaws in logic`,
       ],
       skills: ['HTML', 'SCSS', 'Typescript', 'AngularJS', 'WebdriverIO', 'Jasmine', 'ArcGIS API'],
     },
