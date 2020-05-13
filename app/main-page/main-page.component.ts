@@ -103,7 +103,7 @@ export class MainPageComponent {
       picture: '../../assets/enhancedtable.PNG',
       alt: 'A preview picture of Datagrid Integration',
       description: 'Built a bunch of shit',
-      skills: ['ag-Grid API', 'ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
+      skills: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
     },
     {
       title: 'EconoGlobe',
