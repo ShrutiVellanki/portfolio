@@ -1,4 +1,8 @@
-<div *ngFor="let skill of skills" class="bar-wrapper">
-    <p class="title"><strong>{{ skill.title }}</strong> ({{ skill.percentage }}%)</p>
-    <mat-progress-bar mode="determinate" [value]="skill.percentage"></mat-progress-bar>
+<div class="skills-bar-wrapper">
+    <div *ngFor="let skill of skills" class="bar-wrapper">
+        <p class="title"><strong>{{ skill.title }}</strong> ({{ skill.percentage }}%)</p>
+        <div class="mat-progress-bar" attr.data-width="{{skill.percentage}}%">
+            <div class="bar-inner"></div>
+        </div>
+    </div>
 </div>
