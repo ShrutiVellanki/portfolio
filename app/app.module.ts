@@ -16,16 +16,13 @@ import { PageFooterComponent } from './page-footer/page-footer.component';
 import { PageHeroComponent } from './page-hero/page-hero.component';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { SkillsBarComponent } from './skills-bar/skills-bar.component';
-import { ProjectTitleComponent } from './project-title/project-title.component';
-import { ProjectSkillsTagsComponent } from './project-skills-tags/project-skills-tags.component';
 import { ProjectCardsGridComponent } from './project-cards-grid/project-cards-grid.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import { ProjectPageComponent } from './project-page/project-page.component';
-import { ProjectEconoglobeComponent } from './project-econoglobe/project-econoglobe.component';
 import { StyleGuideComponent } from './style-guide/style-guide.component';
 import { ExperienceEntryComponent } from './experience-entry/experience-entry.component';
 import { CommonModule } from '@angular/common';
 import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
+
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
 // This makes the examples that use MatFormField render the same in StackBlitz as on the docs site.
@@ -39,12 +36,8 @@ import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.co
     PageHeroComponent,
     ProjectCardsComponent,
     SkillsBarComponent,
-    ProjectTitleComponent,
-    ProjectSkillsTagsComponent,
     ProjectCardsGridComponent,
     MainPageComponent,
-    ProjectPageComponent,
-    ProjectEconoglobeComponent,
     routingComponents,
     StyleGuideComponent,
     ExperienceEntryComponent,
