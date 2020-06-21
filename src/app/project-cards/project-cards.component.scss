@@ -5,6 +5,7 @@ mat-card {
     height: 550px;
     margin: 30px 0px 30px 0;
     background-color: $secondary!important;
+    cursor: pointer;
 
     mat-card-title {
         font-family: $font-family-secondary!important;
@@ -13,6 +14,9 @@ mat-card {
     .img-wrapper {
         max-height: 240px;
         overflow: hidden;
+        margin-left: -30px;
+        width: calc(100% + 62px)!important;
+
         img {
             background-image:
         linear-gradient (to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
@@ -35,4 +39,66 @@ mat-card {
     @media (min-width: $s-xx-small) {
         width: initial;
     }
+    
+  /// CARD
+  display: block;
+  top: 0px;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    right: -12px;
+    background: #ffd54f;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(2.5);
+  }
 }
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #ffd54f;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: 0px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: courier, sans;
+    font-size: 30px;
+  }

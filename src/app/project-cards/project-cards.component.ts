@@ -2,9 +2,9 @@ import { Component, Input, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 export interface DialogData {
-  animal: string;
-  name: string;
+  project: any;
 }
+
 
 @Component({
   selector: 'app-project-cards',
@@ -13,15 +13,14 @@ export interface DialogData {
 })
 export class ProjectCardsComponent {
   @Input() project;
-  animal: string;
-  name: string;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+  }
   
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      width: '250px',
-      data: {name: 'hello', animal: 'cat'}
+      width: '100vw',
+      data: { project: this.project }
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -39,7 +38,8 @@ export class DialogOverviewExampleDialog {
 
   constructor(
     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {
+    }
 
   onNoClick(): void {
     this.dialogRef.close();
