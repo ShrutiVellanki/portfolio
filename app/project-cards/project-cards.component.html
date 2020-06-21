@@ -1,9 +1,14 @@
 <mat-card (click)="openDialog()">
+  <div class="go-corner" href="#">
+    <div class="go-arrow">
+      →
+    </div>
+  </div>
     <mat-card-header>
       <mat-card-title>{{ project.title }}</mat-card-title>
       <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
     </mat-card-header>
-    <div mat-card-image  class="img-wrapper">
+    <div mat-card-image class="img-wrapper">
       <img [src]="project.picture" [alt]="project.alt">
     </div> 
     <mat-card-content>
