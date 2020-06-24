@@ -120,6 +120,10 @@
             h2, .mat-display-3 {
                 display: none;
             }
+
+            .icon-row {
+                @include margin-y(10px);
+            }
         }
     }
 }
