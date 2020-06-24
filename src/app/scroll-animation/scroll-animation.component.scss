@@ -5,21 +5,22 @@
     width :34px;
     height: 55px;
   }
-  .mousey {
-    width: 2px;
-    padding: 6px 9px;
-    height: 21px;
-    border: 2px solid $primary;
-    border-radius: 15px;
-    opacity: 0.75;
-    box-sizing: content-box;
 
-    @media(min-width: $s-medium-large) {
-      width: 3px;
-      padding: 10px 15px;
-      height: 35px;
-      border-radius: 25px;
-    }
+  .mousey {
+  width: 2px;
+  padding: 6px 9px;
+  height: 21px;
+  border: 2px solid $primary;
+  border-radius: 15px;
+  opacity: 0.75;
+  box-sizing: content-box;
+
+  @media(min-width: $s-medium) {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border-radius: 25px;
+  }
   }
   .scroller {
     width: 2px;
@@ -31,7 +32,7 @@
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
     animation-iteration-count: infinite;
 
-    @media(min-width: $s-medium-large) {
+    @media(min-width: $s-medium) {
       width: 3px;
       height: 10px;
     }

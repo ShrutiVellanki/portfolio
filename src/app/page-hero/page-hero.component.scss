@@ -12,12 +12,12 @@
         justify-content: center;
         height: 100%;
 
-        h1, h3 {
+        h1, h4 {
             @include margin-x(auto);
             width: 300px;
         }
 
-        .mat-display-1 {
+        .mat-display-2 {
             display: block;
             margin-bottom: 20px!important;
             font-family: $font-family-secondary!important;
@@ -29,7 +29,26 @@
         }
 
         app-scroll-animation {
-            margin-top: 40px;
+            margin-top: 20px;
+        }
+
+        .icon-row {
+            display: flex; 
+            justify-content: center;
+
+            button {
+                color: #ffc107;
+                &.linkedin {
+                    @include margin-x(25px);
+                }
+
+                mat-icon {
+                    i {
+                        width: 14px!important;
+                        height: 14px!important;
+                    }
+                }
+            }
         }
     }
 }
@@ -37,7 +56,7 @@
 @media (min-width: $s-xx-small) {
     .page-hero {
         .hero-content {
-            h1, h2, h3 {
+            h1, h2, h4 {
                 @include margin-x(auto);
                 width: 320px;
             }
@@ -52,14 +71,36 @@
                 font-weight: 500;
             }
 
-            h3, .mat-display-1 {
+            h4, .mat-display-2 {
                 display: none;
             }
         }
     }
 }
 
-@media(min-width: $s-medium-large) {
+@media(min-width: $s-x-small) {
+    .page-hero {
+        .hero-content{
+        h1, h2, h4 {
+            @include margin-x(auto);
+            width: 360px;
+        }
+    }
+    }
+}
+
+@media(min-width: $s-small) {
+    .page-hero {
+        .hero-content{
+        h1, h2, h4 {
+            @include margin-x(auto);
+            width: 500px;
+        }
+    }
+    }
+}
+
+@media(min-width: $s-medium) {
     .page-hero {
         .hero-content {
             h1, .mat-display-4 {
