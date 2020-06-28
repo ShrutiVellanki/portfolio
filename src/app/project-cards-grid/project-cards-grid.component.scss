@@ -3,12 +3,23 @@
 .pair {
     max-width: 940px;
     margin: auto;
+    .project-wrapper {
+        mat-card {
+           margin-left: 0!important;
+           margin-right: 0!important;
+        }
+    }
+
     @media (min-width: $s-medium) {
         display: flex;
         justify-content: space-between;
 
         .project-wrapper {
             width: 48%;
+
+            mat-card {
+                @include margin-x(initial);
+             }
         }
     }
 }
