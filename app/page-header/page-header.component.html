@@ -4,31 +4,21 @@
     </mat-toolbar>
 
     <mat-toolbar color="accent" class="desktop-nav">
-        <button onclick="document.querySelector('#intro').scrollIntoView({ 
-            behavior: 'smooth' 
-          });" mat-button color="primary">Intro</button>
-        <button onclick="document.querySelector('#skills').scrollIntoView({ 
-            behavior: 'smooth' 
-          });" mat-button color="primary">Skills</button>
-        <button onclick="document.querySelector('#experience').scrollIntoView({ 
-            behavior: 'smooth' 
-          });" mat-button color="primary">Experience</button>
-         <button onclick="document.querySelector('#projects').scrollIntoView({ 
-            behavior: 'smooth' 
-          });" mat-button color="primary">Projects</button>
-         <button onclick="document.querySelector('#contact').scrollIntoView({ 
-            behavior: 'smooth' 
-          });" mat-button color="primary">Contact</button>
+        <button (click)="scrollToView('#intro')"  [class.underline]="introInView" mat-button>Intro</button>
+        <button (click)="scrollToView('#skills')" [class.underline]="skillsInView" mat-button>Skills</button>
+        <button (click)="scrollToView('#experience')" [class.underline]="experienceInView" mat-button>Experience</button>
+        <button (click)="scrollToView('#projects')" [class.underline]="projectsInView" mat-button>Projects</button>
+        <button (click)="scrollToView('#contact')" [class.underline]="contactInView" mat-button>Contact</button>
     </mat-toolbar>
 
     <mat-sidenav-container>
         <mat-sidenav color="secondary" #snav mode="'over'" fixedTopGap="56">
             <mat-nav-list>
-            <button onclick="document.querySelector('#intro').scrollIntoView({behavior: smooth})" mat-list-item>Intro</button>
-                <a href="#skills" mat-list-item>Skills</a>
-                <a href="#experience" mat-list-item>Experience</a>
-                <a href="#projects" mat-list-item>Projects</a>
-                <a href="#contact" mat-list-item>Contact</a>
+                <a (click)="scrollToView('#intro', true)" [class.underline]="introInView" mat-list-item>Intro</a>
+                <a (click)="scrollToView('#skills', true)" [class.underline]="skillsInView" mat-list-item>Skills</a>
+                <a (click)="scrollToView('#experience', true)" [class.underline]="experienceInView" mat-list-item>Experience</a>
+                <a (click)="scrollToView('#projects', true)" [class.underline]="projectsInView" mat-list-item>Projects</a>
+                <a (click)="scrollToView('#contact', true)" [class.underline]="contactInView" mat-list-item>Contact</a>
             </mat-nav-list>
         </mat-sidenav>
         <mat-sidenav-content (click)="snav.toggle()" [class.mat-drawer-shown]="opened" class="mat-drawer-backdrop"></mat-sidenav-content>
