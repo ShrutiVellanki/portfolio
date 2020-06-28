@@ -11,7 +11,6 @@ import { AppRoutingModule , routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageSectionComponent } from './page-section/page-section.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
-import { PageNavComponent } from './page-nav/page-nav.component';
 import { PageFooterComponent } from './page-footer/page-footer.component';
 import { PageHeroComponent } from './page-hero/page-hero.component';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
@@ -31,7 +30,6 @@ import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.co
     AppComponent,
     PageSectionComponent,
     PageHeaderComponent,
-    PageNavComponent,
     PageFooterComponent,
     PageHeroComponent,
     ProjectCardsComponent,

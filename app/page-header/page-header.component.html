@@ -1,12 +1,34 @@
 <div class="example-container">
-    <mat-toolbar color="accent" class="example-toolbar">
+    <mat-toolbar color="accent" class="mobile-nav">
         <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    </mat-toolbar>
+
+    <mat-toolbar color="accent" class="desktop-nav">
+        <button onclick="document.querySelector('#intro').scrollIntoView({ 
+            behavior: 'smooth' 
+          });" mat-button color="primary">Intro</button>
+        <button onclick="document.querySelector('#skills').scrollIntoView({ 
+            behavior: 'smooth' 
+          });" mat-button color="primary">Skills</button>
+        <button onclick="document.querySelector('#experience').scrollIntoView({ 
+            behavior: 'smooth' 
+          });" mat-button color="primary">Experience</button>
+         <button onclick="document.querySelector('#projects').scrollIntoView({ 
+            behavior: 'smooth' 
+          });" mat-button color="primary">Projects</button>
+         <button onclick="document.querySelector('#contact').scrollIntoView({ 
+            behavior: 'smooth' 
+          });" mat-button color="primary">Contact</button>
     </mat-toolbar>
 
     <mat-sidenav-container>
         <mat-sidenav color="secondary" #snav mode="'over'" fixedTopGap="56">
             <mat-nav-list>
-                <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
+            <button onclick="document.querySelector('#intro').scrollIntoView({behavior: smooth})" mat-list-item>Intro</button>
+                <a href="#skills" mat-list-item>Skills</a>
+                <a href="#experience" mat-list-item>Experience</a>
+                <a href="#projects" mat-list-item>Projects</a>
+                <a href="#contact" mat-list-item>Contact</a>
             </mat-nav-list>
         </mat-sidenav>
         <mat-sidenav-content (click)="snav.toggle()" [class.mat-drawer-shown]="opened" class="mat-drawer-backdrop"></mat-sidenav-content>

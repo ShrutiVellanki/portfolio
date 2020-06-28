@@ -6,7 +6,7 @@
 @include mat-core();
 
 // Material Theme Colors 
-$primary: #ffc107;
+$primary: #ffb300;
 $secondary: whitesmoke;
 $warn: #ffa000;
 $primary-light: mat-palette($mat-amber);
@@ -93,5 +93,9 @@ html, body {
 
     .mat-typography {
         @include padding-x(0);
+    }
+
+    button {
+        font-family: $font-family-primary!important;
     }
 }

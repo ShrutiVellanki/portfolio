@@ -1,18 +1,24 @@
 <div class="main-page">
-    <app-page-section header="Intro">
+    <app-page-section id="intro" header="Intro">
         <p *ngFor="let content of introContentList" class="intro" [innerHTML]="content">
         </p>
     </app-page-section>
 
-    <app-page-section header="Skills">
+    <app-page-section id="skills" header="Skills">
         <app-skills-bar [skills]="skillsList"></app-skills-bar>
     </app-page-section>
 
-    <app-page-section header="Experience">
+    <app-page-section id="experience" header="Experience">
         <app-experience-entry [experiences]="experienceList"></app-experience-entry>
     </app-page-section>
 
-    <app-page-section header="Projects">
+    <app-page-section id="projects" header="Projects">
+        <p class="project-disclaimer">
+        </p>
+        <app-project-cards-grid [projects]="projectsList" class="projects"></app-project-cards-grid>
+    </app-page-section>
+
+    <app-page-section id="contact" header="Contact">
         <p class="project-disclaimer">
         </p>
         <app-project-cards-grid [projects]="projectsList" class="projects"></app-project-cards-grid>
