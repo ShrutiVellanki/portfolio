@@ -95,7 +95,11 @@ html, body {
         @include padding-x(0);
     }
 
-    button {
+    button,a {
         font-family: $font-family-primary!important;
+    }
+
+    .mat-drawer-inner-container {
+        background-color: whitesmoke!important;
     }
 }
