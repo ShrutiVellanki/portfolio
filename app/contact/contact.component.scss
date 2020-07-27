@@ -1,0 +1,65 @@
+@import '../../styles.scss';
+
+.contact-container {
+    width: calc(100% - 80px);
+    padding: 40px;
+    border: 1px lightgrey solid;
+    border-radius: 4px;
+    margin-top: 50px!important;
+
+    .desktop {
+        display: none;
+    }
+
+    .contact-row {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+
+        textarea {
+            box-shadow: none!important;
+        
+            &:focus {
+                border: none!important;
+                box-shadow: none!important;
+            }
+        }
+        
+        input {
+            box-shadow: none!important;
+        }
+
+        .mat-error {
+            color: #f44336!important;
+        }
+    }
+
+    .submit-wrapper {
+        text-align: right;
+    }
+}
+
+@media (min-width: $s-medium) {
+    .contact-container {
+        margin: auto;
+        width: calc(100% - 120px);
+        width: 520px;
+        padding: 60px;
+        
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+        .contact-row {
+
+            .email {
+                position: absolute;
+                right: 0px;
+            }
+        }
+    }
+}

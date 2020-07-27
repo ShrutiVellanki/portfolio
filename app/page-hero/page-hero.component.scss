@@ -5,12 +5,14 @@
     text-align: center;
     background-color: $secondary;
     color: black;
+    min-height: 600px;
 
     .hero-content {
         display: flex;
         flex-flow: column;
         justify-content: center;
         height: 100%;
+        margin-top: 44px!important;;
 
         h1, h4 {
             @include margin-x(auto);
@@ -107,6 +109,8 @@
 @media(min-width: $s-medium) {
     .page-hero {
         .hero-content {
+            margin-top: 64px!important;;
+
             h1, .mat-display-4 {
                 display: block;
             }
