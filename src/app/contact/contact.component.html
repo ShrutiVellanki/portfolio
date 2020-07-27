@@ -1,0 +1,38 @@
+<div class="contact-container">
+  <div class="contact-row desktop">
+    <mat-form-field>
+      <input [formControl]="firstName" placeholder="Name*" matInput required>
+      <mat-icon matSuffix>perm_identity</mat-icon>
+      <mat-error *ngIf="firstName.invalid">Identify yourself!</mat-error>
+    </mat-form-field>
+    <mat-form-field class="email">
+      <input [formControl]="email" placeholder="Email*" matInput required>
+      <mat-icon matSuffix>email</mat-icon>
+      <mat-error *ngIf="email.invalid">{{ errorMsg() }}</mat-error>
+    </mat-form-field>
+  </div>
+  <mat-form-field class="mobile contact-row">
+    <input [formControl]="firstName" placeholder="Name*" matInput required>
+    <mat-icon matSuffix>perm_identity</mat-icon>
+    <mat-error *ngIf="firstName.invalid">Identify yourself!</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="email mobile contact-row">
+    <input [formControl]="email" placeholder="Email*" matInput required>
+    <mat-icon matSuffix>email</mat-icon>
+    <mat-error *ngIf="email.invalid">{{ errorMsg() }}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="contact-row">
+    <input  [formControl]="subject" placeholder="Subject*" matInput required>
+    <mat-icon matSuffix>create</mat-icon>
+    <mat-error *ngIf="subject.invalid">What's this about?</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="contact-row">
+    <textarea matInput [formControl]="message" placeholder="Message*" required rows="8"></textarea>
+    <mat-error *ngIf="message.invalid">A description would be nice.</mat-error>
+  </mat-form-field>
+  <div class="submit-wrapper">
+    <button mat-raised-button color="primary">Submit →</button>
+  </div>
+</div>

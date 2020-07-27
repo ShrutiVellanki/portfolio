@@ -21,6 +21,7 @@ import { StyleGuideComponent } from './style-guide/style-guide.component';
 import { ExperienceEntryComponent } from './experience-entry/experience-entry.component';
 import { CommonModule } from '@angular/common';
 import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
+import { ContactComponent } from './contact/contact.component';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -40,6 +41,7 @@ import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.co
     StyleGuideComponent,
     ExperienceEntryComponent,
     ScrollAnimationComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

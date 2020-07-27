@@ -8,10 +8,10 @@
 // Material Theme Colors 
 $primary: #ffb300;
 $secondary: whitesmoke;
-$warn: #ffa000;
+$warn: #f44336;
 $primary-light: mat-palette($mat-amber);
 $accent-light: mat-palette($mat-grey, 50);
-$warn-light: mat-palette($mat-amber, 700);
+$warn-light: mat-palette($mat-red, 300);
 $shruti-portfolio-theme: mat-light-theme($primary-light, $accent-light, $warn-light);
 @include angular-material-theme($shruti-portfolio-theme);
 
