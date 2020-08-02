@@ -39,6 +39,14 @@ export class PageHeaderComponent implements AfterViewInit {
     return this.inViewPort(intro) && !this.inViewPort(skills);
   }
 
+  get elementsExist() {
+    return document.getElementById('intro') !== null && 
+          document.getElementById('skills') !== null &&
+          document.getElementById('experience') !== null &&
+          document.getElementById('projects') !== null &&
+          document.getElementById('contact') !== null;
+  }
+
   get skillsInView() {
     const skills = document.getElementById('skills').children[0];
     const experience = document.getElementById('experience').children[0];

@@ -4,21 +4,75 @@
       →
     </div>
   </div>
-    <mat-card-header>
-      <mat-card-title>{{ project.title }}</mat-card-title>
-      <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
-    </mat-card-header>
-    <div mat-card-image class="img-wrapper">
-      <img [src]="project.picture" [alt]="project.alt">
-    </div> 
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-chip-list>
-      <mat-chip color="primary" selected *ngFor="let skill of project.skills">{{ skill }}</mat-chip>
-    </mat-chip-list>
+  <mat-card-header>
+    <mat-card-title>{{ project.title }}</mat-card-title>
+    <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <div mat-card-image class="img-wrapper">
+    <img [src]="project.picture" [alt]="project.alt" />
+  </div>
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz
+      breeds of dog from Japan. A small, agile dog that copes very well with
+      mountainous terrain, the Shiba Inu was originally bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-chip-list>
+    <mat-chip color="primary" selected *ngFor="let skill of project.skills">{{
+      skill
+    }}</mat-chip>
+  </mat-chip-list>
 </mat-card>
+
+<ng-template #projectModal>
+  <button (click)="dialogRef.close()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="black"
+      width="18px"
+      height="18px"
+    >
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      />
+    </svg>
+  </button>
+  <div class="content-wrapper">
+    <div class="header">
+      <h1 mat-dialog-title>{{ project.title }}</h1>
+      <p>{{ project.subtitle }}</p>
+      <mat-carousel
+      timings="250ms ease-in"
+      [autoplay]="true"
+      interval="5000"
+      color="accent"
+      maxWidth="700"
+      proportion="45"
+      [loop]="true"
+      [hideArrows]="false"
+      [hideIndicators]="false"
+      [useKeyboard]="true"
+      [useMouseWheel]="false"
+      orientation="ltr"
+    >
+      <mat-carousel-slide
+        #matCarouselSlide
+        *ngFor="let slide of project.slides; let i = index"
+        [image]="slide"
+        overlayColor="#00000005"
+        [hideOverlay]="false"
+      ></mat-carousel-slide>
+    </mat-carousel>
+    </div>
+    <div class="mat-dialog-content" mat-dialog-content>
+      <div class="para-content">
+        <p>{{ project.paragraphs[0] }}</p>
+        <p>{{ project.paragraphs[1] }}</p>
+        <p>{{ project.paragraphs[2] }}</p>
+      </div>
+    </div>
+  </div>
+</ng-template>

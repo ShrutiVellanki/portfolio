@@ -3,7 +3,7 @@
         <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
     </mat-toolbar>
 
-    <mat-toolbar color="accent" class="desktop-nav">
+    <mat-toolbar color="accent" class="desktop-nav" *ngIf="elementsExist">
         <button (click)="scrollToView('#intro')"  [class.underline]="introInView" mat-button>Intro</button>
         <button (click)="scrollToView('#skills')" [class.underline]="skillsInView" mat-button>Skills</button>
         <button (click)="scrollToView('#experience')" [class.underline]="experienceInView" mat-button>Experience</button>
@@ -13,7 +13,7 @@
 
     <mat-sidenav-container>
         <mat-sidenav color="secondary" #snav mode="'over'" fixedTopGap="56">
-            <mat-nav-list>
+            <mat-nav-list *ngIf="elementsExist">
                 <a (click)="scrollToView('#intro', true)" [class.underline]="introInView" mat-list-item>Intro</a>
                 <a (click)="scrollToView('#skills', true)" [class.underline]="skillsInView" mat-list-item>Skills</a>
                 <a (click)="scrollToView('#experience', true)" [class.underline]="experienceInView" mat-list-item>Experience</a>

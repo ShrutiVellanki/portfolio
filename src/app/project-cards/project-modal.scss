@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+
+.mat-dialog-content {
+    overflow: auto;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px!important;
+}
+
+button{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    border: none;
+    padding: 0;
+
+    svg {
+        margin: auto!important;
+    }
+}

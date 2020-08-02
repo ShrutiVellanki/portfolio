@@ -1,4 +1,4 @@
-<div class="contact-container">
+<form (ngSubmit)="processForm()" class="contact-container">
   <div class="contact-row desktop">
     <mat-form-field>
       <input [formControl]="firstName" placeholder="Name*" matInput required>
@@ -33,6 +33,6 @@
     <mat-error *ngIf="message.invalid">A description would be nice.</mat-error>
   </mat-form-field>
   <div class="submit-wrapper">
-    <button mat-raised-button color="primary">Submit →</button>
+    <button type="submit" mat-raised-button color="primary">Submit →</button>
   </div>
-</div>
+</form>

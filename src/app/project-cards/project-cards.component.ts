@@ -1,47 +1,29 @@
-import { Component, Input, Inject } from '@angular/core';
+import { Component, Input, Inject, NgModule, TemplateRef, ViewChild } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-
-export interface DialogData {
-  project: any;
-}
-
+import { SvgIconOverrides } from '@ngmodule/material-carousel';
 
 @Component({
   selector: 'app-project-cards',
   templateUrl: './project-cards.component.html',
-  styleUrls: ['./project-cards.component.scss']
+  styleUrls: ['./project-cards.component.scss', './project-modal.scss']
 })
 export class ProjectCardsComponent {
   @Input() project;
+  @ViewChild("projectModal") projectModal: TemplateRef<any>;
+  dialogRef;
+  overrides: SvgIconOverrides = {
+    arrowBack: 'account_box',
+    arrowForward: 'account_box'
+  }
 
   constructor(public dialog: MatDialog) {
   }
   
   openDialog(): void {
-    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      width: '100vw',
-      data: { project: this.project }
-    });
+    this.dialogRef = this.dialog.open(this.projectModal);
 
-    dialogRef.afterClosed().subscribe(result => {
+    this.dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
-  }
-
-}
-
-@Component({
-  selector: 'dialog-overview-example-dialog',
-  templateUrl: 'dialog-overview-example-dialog.html',
-})
-export class DialogOverviewExampleDialog {
-
-  constructor(
-    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-    }
-
-  onNoClick(): void {
-    this.dialogRef.close();
   }
 }
