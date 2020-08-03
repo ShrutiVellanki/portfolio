@@ -51,7 +51,7 @@
         [autoplay]="true"
         interval="5000"
         color="accent"
-        maxWidth="700"
+        maxWidth="900"
         proportion="45"
         [loop]="true"
         [hideArrows]="false"
@@ -60,10 +60,34 @@
         [useMouseWheel]="false"
         orientation="ltr"
         (change)="onChange($event)"
+        class="desktop-slide"
       >
         <mat-carousel-slide
-          #matCarouselSlide
           *ngFor="let slide of project.slides; let i = index"
+          [image]="slide"
+          overlayColor="#00000005"
+          [hideOverlay]="false"
+        ></mat-carousel-slide>
+      </mat-carousel>
+
+      <mat-carousel
+        timings="250ms ease-in"
+        [autoplay]="true"
+        interval="5000"
+        color="accent"
+        maxWidth="900"
+        proportion="45"
+        [loop]="true"
+        [hideArrows]="false"
+        [hideIndicators]="false"
+        [useKeyboard]="true"
+        [useMouseWheel]="false"
+        orientation="ltr"
+        (change)="onChange($event)"
+        class="mobile-slide"
+      >
+        <mat-carousel-slide
+          *ngFor="let slide of project.mobileSlides; let i = index"
           [image]="slide"
           overlayColor="#00000005"
           [hideOverlay]="false"
