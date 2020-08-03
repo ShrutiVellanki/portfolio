@@ -11,6 +11,8 @@ export class ProjectCardsComponent {
   @Input() project;
   @ViewChild("projectModal") projectModal: TemplateRef<any>;
   dialogRef;
+  index = 0
+
   overrides: SvgIconOverrides = {
     arrowBack: 'account_box',
     arrowForward: 'account_box'
@@ -25,5 +27,13 @@ export class ProjectCardsComponent {
     this.dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
+
+  public onChange(index: number) {
+    this.index = index
+  }
+
+  get caption() {
+    return this.project.captions[this.index]
   }
 }

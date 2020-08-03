@@ -106,6 +106,7 @@ export class MainPageComponent {
       skills: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
       slides: ['../../assets/enhanced-table-slide-one.PNG', '../../assets/enhanced-table-slide-two.png', '../../assets/enhanced-table-slide-three.png'],
+      captions: ['caption 1', 'caption 2', 'caption 3'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -121,6 +122,7 @@ export class MainPageComponent {
       skills: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
       features: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
       slides: ['../../assets/econoglobe-slide-1.png', '../../assets/econoglobe-slide-2.PNG'],
+      captions: ['caption 1', 'caption 2'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -136,6 +138,7 @@ export class MainPageComponent {
       skills: ['Figma', 'UX Design Principles'],
       features: ['Figma', 'UX Design Principles'],
       slides: ['../../assets/snackhacks-slide-one.png', '../../assets/snackhacks-slide-two.png', '../../assets/snackhacks-slide-three.png', '../../assets/snackhacks-slide-four.jpg', '../../assets/snackhacks-slide-five.png'],
+      captions: ['caption 1', 'caption 2', 'caption 3', 'caption 4', 'caption 5'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -152,6 +155,7 @@ export class MainPageComponent {
       skills: ['ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
       slides: ['../../assets/aoi-slide-2.png', '../../assets/aoi-slide-1.png', '../../assets/aoi-slide-3.png'],
+      captions: ['caption one', 'caption 2', 'caption 3'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
