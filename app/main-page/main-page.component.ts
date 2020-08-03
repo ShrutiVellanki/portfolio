@@ -100,7 +100,7 @@ export class MainPageComponent {
     {
       title: 'Data Table Integration',
       subtitle: 'Integration for Environment Canada\'s web map.',
-      picture: '../../assets/enhancedtable.PNG',
+      picture: '../../assets/enhanced-table-slide-three.png',
       alt: 'A preview picture of Datagrid Integration',
       description: 'Built a bunch of shit',
       skills: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
@@ -115,7 +115,7 @@ export class MainPageComponent {
     {
       title: 'EconoGlobe',
       subtitle: 'Data viz of Economic Indicators for major cities.',
-      picture: '../../assets/econoglobe.png',
+      picture: '../../assets/econoglobe-slide-1.png',
       alt: 'A preview picture of EconoGlobe',
       description: 'Built a bunch of shit Built a bunch of shit Built a bunch of shit',
       skills: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
@@ -130,12 +130,12 @@ export class MainPageComponent {
     {
       title: 'SnackHacks',
       subtitle: 'Design for an intelligent diet app.',
-      picture: '../../assets/snackhacks.png',
+      picture: '../../assets/snackhacks-slide-one.png',
       alt: 'A preview picture of SnackHacks',
       description: 'Inspired by an Interaction Design Course.',
       skills: ['Figma', 'UX Design Principles'],
       features: ['Figma', 'UX Design Principles'],
-      slides: ['../../assets/enhancedtable.PNG', '../../assets/econoglobe.png', '../../assets/snackhacks.png'],
+      slides: ['../../assets/snackhacks-slide-one.png', '../../assets/snackhacks-slide-two.png', '../../assets/snackhacks-slide-three.png', '../../assets/snackhacks-slide-four.jpg', '../../assets/snackhacks-slide-five.png'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -145,7 +145,7 @@ export class MainPageComponent {
     {
       title: 'Bookmarks Integration',
       subtitle: 'Integration for Environment Canada\'s web map.',
-      picture: '../../assets/aoi.PNG',
+      picture: '../../assets/aoi-slide-2.png',
       alt: 'A preview picture of Android Store',
       caseStudyLink: 'XYZ Corp',
       description: 'Built a bunch of shit',
