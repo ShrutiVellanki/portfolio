@@ -112,7 +112,7 @@ body {
   mat-dialog-container {
     width: 100vw!important;
     .mat-dialog-content,.header {
-        max-width: 600px;
+        max-width: 900px;
         margin: auto;
         max-height: unset!important;
         padding: 0!important;
@@ -126,8 +126,8 @@ body {
 
   .carousel {
     min-height: 300px !important;
-    height: 30vh!important;
-    max-width: 600px;
+    height: 50vh!important;
+    max-width: 900px;
     border: 2px solid black;
     left: 0;
     right: 0;
@@ -150,6 +150,10 @@ body {
       &:first-of-type {
         left: 5px!important;
       }
+    }
+
+    @media (min-width: $s-medium-small) {
+      min-height: 400px !important;
     }
   }
 }

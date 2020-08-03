@@ -102,3 +102,17 @@ mat-card {
     font-family: courier, sans;
     font-size: 30px;
   }
+
+.desktop-slide {
+  display: none;
+}
+
+@media (min-width: $s-medium) {
+  .desktop-slide {
+    display: block;
+  }
+
+  .mobile-slide {
+    display: none;
+  }
+}
