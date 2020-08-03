@@ -140,6 +140,10 @@ body {
       }
     }
 
+    .carousel-slide {
+      background-position: unset!important;
+    }
+
     button,.mat-focus-indicator {
       background-color: rgb(255, 179, 0, 0.95)!important;
       color: black!important;

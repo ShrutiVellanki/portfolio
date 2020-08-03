@@ -100,13 +100,12 @@ export class MainPageComponent {
     {
       title: 'Data Table Integration',
       subtitle: 'Integration for Environment Canada\'s web map.',
-      picture: '../../assets/enhanced/enhanced-table-slide-three.png',
+      picture: '../../assets/enhancedTable/enhanced-table-slide-three.png',
       alt: 'A preview picture of Datagrid Integration',
       description: 'Built a bunch of shit',
       skills: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
-      slides: ['../../assets/enhanced/enhanced-table-slide-one.PNG', '../../assets/enhanced/enhanced-table-slide-two.png', '../../assets/enhanced/enhanced-table-slide-three.png'],
-      mobileSlides: ['../../assets/enhanced/enhanced-table-slide-one.PNG', '../../assets/enhanced/enhanced-table-slide-two.png', '../../assets/enhanced/enhanced-table-slide-three.png'],
+      slides: ['../../assets/enhancedTable/enhanced-table-slide-one.PNG', '../../assets/enhancedTable/enhanced-table-slide-two.png', '../../assets/enhancedTable/enhanced-table-slide-three.png'],
       captions: ['caption 1', 'caption 2', 'caption 3'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -123,7 +122,6 @@ export class MainPageComponent {
       skills: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
       features: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
       slides: ['../../assets/econoglobe/econoglobe-slide-1.png', '../../assets/econoglobe/econoglobe-slide-2.PNG'],
-      mobileSlides: ['../../assets/econoglobe/econoglobe-slide-1.png', '../../assets/econoglobe/econoglobe-slide-2.PNG'],
       captions: ['caption 1', 'caption 2'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -140,7 +138,6 @@ export class MainPageComponent {
       skills: ['Figma', 'UX Design Principles'],
       features: ['Figma', 'UX Design Principles'],
       slides: ['../../assets/snackhacks/snackhacks-slide-one.png', '../../assets/snackhacks/snackhacks-slide-two.png', '../../assets/snackhacks/snackhacks-slide-three.png', '../../assets/snackhacks/snackhacks-slide-four.jpg', '../../assets/snackhacks/snackhacks-slide-five.png'],
-      mobileSlides: ['../../assets/snackhacks/snackhacks-slide-one.png', '../../assets/snackhacks/snackhacks-slide-two.png', '../../assets/snackhacks/snackhacks-slide-three.png', '../../assets/snackhacks/snackhacks-slide-four.jpg', '../../assets/snackhacks/snackhacks-slide-five.png'],
       captions: ['caption 1', 'caption 2', 'caption 3', 'caption 4', 'caption 5'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -158,7 +155,6 @@ export class MainPageComponent {
       skills: ['ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
       slides: ['../../assets/aoi/aoi-slide-2.png', '../../assets/aoi/aoi-slide-1.png', '../../assets/aoi/aoi-slide-3.png'],
-      mobileSlides: ['../../assets/aoi/aoi-slide-2.png', '../../assets/aoi/aoi-slide-1.png', '../../assets/aoi/aoi-slide-3.png'],
       captions: ['caption one', 'caption 2', 'caption 3'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
