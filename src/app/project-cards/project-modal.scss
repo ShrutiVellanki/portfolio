@@ -12,15 +12,27 @@ p {
     margin-bottom: 30px!important;
 }
 
-button{
-    position: absolute;
-    top: 30px;
-    right: 30px;
+.close-header {
+    display: flex;
+    justify-content: flex-end;
+    right: 24px;
+    top: 24px;
     background-color: white;
-    border: none;
-    padding: 0;
-
-    svg {
-        margin: auto!important;
+    button{
+        border: none;
+        padding: 0;
+        background-color: white;
+    
+        svg {
+            margin: auto!important;
+        }
     }
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.caption {
+    color: grey;
 }

@@ -26,46 +26,52 @@
 </mat-card>
 
 <ng-template #projectModal>
-  <button (click)="dialogRef.close()">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="black"
-      width="18px"
-      height="18px"
-    >
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-      />
-    </svg>
-  </button>
+  <div class="close-header">
+    <button (click)="dialogRef.close()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="black"
+        width="18px"
+        height="18px"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </button>
+  </div>
   <div class="content-wrapper">
     <div class="header">
       <h1 mat-dialog-title>{{ project.title }}</h1>
       <p>{{ project.subtitle }}</p>
       <mat-carousel
-      timings="250ms ease-in"
-      [autoplay]="true"
-      interval="5000"
-      color="accent"
-      maxWidth="700"
-      proportion="45"
-      [loop]="true"
-      [hideArrows]="false"
-      [hideIndicators]="false"
-      [useKeyboard]="true"
-      [useMouseWheel]="false"
-      orientation="ltr"
-    >
-      <mat-carousel-slide
-        #matCarouselSlide
-        *ngFor="let slide of project.slides; let i = index"
-        [image]="slide"
-        overlayColor="#00000005"
-        [hideOverlay]="false"
-      ></mat-carousel-slide>
-    </mat-carousel>
+        timings="250ms ease-in"
+        [autoplay]="true"
+        interval="5000"
+        color="accent"
+        maxWidth="700"
+        proportion="45"
+        [loop]="true"
+        [hideArrows]="false"
+        [hideIndicators]="false"
+        [useKeyboard]="true"
+        [useMouseWheel]="false"
+        orientation="ltr"
+        (change)="onChange($event)"
+      >
+        <mat-carousel-slide
+          #matCarouselSlide
+          *ngFor="let slide of project.slides; let i = index"
+          [image]="slide"
+          overlayColor="#00000005"
+          [hideOverlay]="false"
+        ></mat-carousel-slide>
+      </mat-carousel>
+      <p class="caption">
+        <i>{{ caption }}</i>
+      </p>
     </div>
     <div class="mat-dialog-content" mat-dialog-content>
       <div class="para-content">
