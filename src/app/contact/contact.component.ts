@@ -31,8 +31,7 @@ export class ContactComponent implements OnInit {
     return this.email.hasError('email') ? `That's not an email...` : '';
   }
 
-  processForm(event) {    
-    console.log(event)
+  processForm() {    
     this.openToastResetForm()
 
   }
