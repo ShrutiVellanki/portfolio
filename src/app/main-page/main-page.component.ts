@@ -105,8 +105,8 @@ export class MainPageComponent {
       description: 'Built a bunch of shit',
       skills: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
-      slides: ['../../assets/enhancedTable/enhanced-table-slide-one.PNG', '../../assets/enhancedTable/enhanced-table-slide-two.png', '../../assets/enhancedTable/enhanced-table-slide-three.png'],
-      captions: ['caption 1', 'caption 2', 'caption 3'],
+      slides: ['../../assets/enhancedTable/enhanced-table-slide-one.PNG', '../../assets/enhancedTable/enhanced-table-slide-three.png'],
+      captions: ['caption 1', 'caption 3'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,

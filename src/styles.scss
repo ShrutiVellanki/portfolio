@@ -140,11 +140,7 @@ body {
       }
     }
 
-    .carousel-slide {
-      background-position: unset!important;
-    }
-
-    button,.mat-focus-indicator {
+    button.mat-icon-button{
       background-color: rgb(255, 179, 0, 0.95)!important;
       color: black!important;
       &:last-of-type {
@@ -156,8 +152,32 @@ body {
       }
     }
 
+    .mat-mini-fab{
+      background-color: rgb(0,0,0,0.8);
+      &:disabled {
+        background-color: rgb(0,0,0,0.42);
+      }
+    }
+
+    .carousel-indicators {
+      background-color:rgb(255, 179, 0, 0.8)!important;
+      border-radius: 4px!important;
+  }
+
     @media (min-width: $s-medium-small) {
       min-height: 400px !important;
     }
   }
+}
+
+
+
+.carousel-slide {
+  background-position: unset !important;
+}
+
+.right-align {
+  .carousel-slide {
+    background-position: right !important;
+  }  
 }

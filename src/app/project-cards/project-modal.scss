@@ -13,15 +13,17 @@ p {
 }
 
 .close-header {
+    position: absolute;
     display: flex;
     justify-content: flex-end;
-    right: 24px;
-    top: 24px;
-    background-color: white;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+
     button{
         border: none;
         padding: 0;
-        background-color: white;
+        background-color: whitesmoke;
     
         svg {
             margin: auto!important;
@@ -30,9 +32,10 @@ p {
 }
 
 .header {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .caption {
     color: grey;
 }
+

@@ -26,7 +26,7 @@
 </mat-card>
 
 <ng-template #projectModal>
-  <div class="close-header">
+  <mat-toolbar color="accent" class="close-header">
     <button (click)="dialogRef.close()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -41,18 +41,18 @@
         />
       </svg>
     </button>
-  </div>
+  </mat-toolbar>
   <div class="content-wrapper">
     <div class="header">
       <h1 mat-dialog-title>{{ project.title }}</h1>
       <p>{{ project.subtitle }}</p>
       <mat-carousel
         timings="250ms ease-in"
-        [autoplay]="true"
+        [autoplay]="false"
         interval="5000"
         color="accent"
         maxWidth="900"
-        proportion="45"
+        proportion="15"
         [loop]="true"
         [hideArrows]="false"
         [hideIndicators]="false"
@@ -60,12 +60,13 @@
         [useMouseWheel]="false"
         orientation="ltr"
         (change)="onChange($event)"
+        [class.right-align]="project.title === 'Data Table Integration' || project.title === 'EconoGlobe'"
       >
         <mat-carousel-slide
           *ngFor="let slide of project.slides; let i = index"
           [image]="slide"
-          overlayColor="#00000005"
-          [hideOverlay]="false"
+          overlayColor="#00000030"
+          [hideOverlay]="true"
         ></mat-carousel-slide>
       </mat-carousel>
       <p class="caption">
