@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators, FormBuilder, FormGroupDirective } from '@angular/forms';
+import { FormControl, Validators, FormBuilder } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -50,7 +50,6 @@ export class ContactComponent implements OnInit {
   }
 
   processForm(event) {    
-    console.log(event)
     if(this.contactForm.valid) {
       this._snackBar.open('Email Sent!', 'OK', {
         duration: 2000,

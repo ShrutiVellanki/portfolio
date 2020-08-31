@@ -37,16 +37,12 @@ export class MainPageComponent {
       percentage: 75,
     },
     {
-      title: 'Python',
-      percentage: 50,
-    },
-    {
-      title: 'Java',
-      percentage: 40,
+      title: 'Vue.js and Vuex',
+      percentage: 70,
     },
     {
       title: 'Apollo GraphQL',
-      percentage: 25,
+      percentage: 45,
     },  
     {
       title: 'Sketch and Figma',
@@ -61,9 +57,13 @@ export class MainPageComponent {
       company: 'Environment Canada',
       employmentType: 'Full Time',
       list: [
-              `I just started this job! Check out other sections for more detailed descriptions.`,
-      ],
-      skills: [],
+              `Worked  on a two-person front end team to help <strong>revamp a large legacy windows application</strong>  (a ticketing system that grants authorization to users and organizations on Environment Canada’s portal) by <strong>converting it to a modern, easy-to-use web application</strong>`,
+              `Leveraged <strong>Vue.js</strong>, <strong>Vuex</strong>, <strong>Bulma</strong> (CSS framework) as well as <strong>Apollo GraphQL</strong>`,
+              `Took initiative by <strong>making major technical decisions</strong> such as researching, justifying and demonstrating the merits of Apollo GraphQL on the client-side (vs. other GraphQL clients) and eventually ended up <strong>shaping a large chunk of the project structure</strong>`,
+              `Followed <strong>best-practices</strong> ensuring all UI components are <strong>mobile responsive</strong> and <strong>accessible</strong> with all text content <strong>internationalized (i18n)</strong>`,
+              `Helped the backend team <strong>define API structure</strong> and made UI components functional by writing client-side GraphQL schemas and test data `
+            ],
+      skills: [`Vue.js`, `Vuex`, `Apollo GraphQL`, `Bulma`, `HTML`, `SCSS`],
     },
     {
       jobTitle: 'Web Interface Engineer',
