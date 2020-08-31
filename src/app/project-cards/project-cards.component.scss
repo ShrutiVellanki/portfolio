@@ -67,7 +67,7 @@ mat-card {
     z-index: -1;
     top: -8px;
     right: -12px;
-    background: #ffecb3;
+    background: rgb(255, 179, 0, 0.95);
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -91,7 +91,7 @@ mat-card {
     overflow: hidden;
     top: 0;
     right: 0;
-    background-color: #ffecb3;
+    background-color: rgb(255, 179, 0, 0.95);
     border-radius: 0 4px 0 32px;
   }
   

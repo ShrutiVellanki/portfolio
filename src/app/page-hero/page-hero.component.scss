@@ -39,7 +39,7 @@
             justify-content: center;
 
             button {
-                color: #ffb300;
+                color: $primary;
                 &.linkedin {
                     @include margin-x(25px);
                 }

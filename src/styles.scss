@@ -91,6 +91,35 @@ $custom-typography: mat-typography-config(
 // Other Styles
 html,
 body {
+
+  /*** Works on common browsers ***/
+::selection {
+  background-color: $primary;
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: $primary;
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: $primary;
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: $primary;
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: $primary;
+  color: #fff;
+}
   margin: 0;
 
   .cdk-overlay-pane[style] {
@@ -123,6 +152,9 @@ body {
         padding: 0!important;
     }
   }
+  .mat-card-content{
+    height: unset!important;
+  }
 
   .carousel-indicators {
     top: unset !important;
@@ -133,7 +165,7 @@ body {
     min-height: 300px !important;
     height: 50vh!important;
     max-width: 900px;
-    border: 2px solid black;
+    border-radius: 8px;
     left: 0;
     right: 0;
     position: absolute;
@@ -156,11 +188,11 @@ body {
       background-color: rgb(255, 179, 0, 0.95)!important;
       color: black!important;
       &:last-of-type {
-        right: 5px!important;
+        right: 15px!important;
       }
 
       &:first-of-type {
-        left: 5px!important;
+        left: 15px!important;
       }
     }
 
