@@ -98,15 +98,19 @@ export class MainPageComponent {
   
   projectsList = [
     {
-      title: 'Data Table Integration',
-      subtitle: 'Integration for Environment Canada\'s web map.',
+      title: 'Datagrid Map Integration',
+      subtitle: 'Web Mapping Team - Environment Canada',
+      content: ['When there are lots of points on a map it becomes hard for a user to zoom and click their way into finding the details that they need. I helped develop this datagrid map integration as a solution.', 'It provides a comprehensive overview of all map points, allowing the user to filter, export, and interact with map data as needed.'],
       picture: '../../assets/enhancedTable/enhanced-table-slide-three.png',
       alt: 'A preview picture of Datagrid Integration',
       description: 'Built a bunch of shit',
       skills: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ag-Grid API', 'SCSS', 'Typescript', 'Angular'],
       slides: ['../../assets/enhancedTable/enhanced-table-slide-one.PNG', '../../assets/enhancedTable/enhanced-table-slide-three.png'],
-      captions: ['caption 1', 'caption 3'],
+      captions: [
+                'Clicking on the Nuclear powerplants layer opens up a datagrid displaying all the nuclear powerplants on the map. Each row corresponds to a powerplant and gives the user the option to zoom into its corresponding point on the map. Each column can be filtered and sorted.', 
+                'The datagrid has a built in menu which provides options to adjust display settings, pick advanced filtering options, and to export data.'
+              ],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -115,14 +119,15 @@ export class MainPageComponent {
     },
     {
       title: 'EconoGlobe',
-      subtitle: 'Data viz of Economic Indicators for major cities.',
+      subtitle: 'Personal Project',
+      content: ['How do different parts of the world compare when it comes to GDP, unemployment rates and rent prices? When I  stumbled upon the Teleport API that provided this sort of data for over 200 cities around the world, I knew it was time for a personal project.', 'The result is a data visualization (it leverages Google Maps!) of 5 economic indicators - simply hover over each city to learn more.'],
       picture: '../../assets/econoglobe/econoglobe-slide-1.png',
       alt: 'A preview picture of EconoGlobe',
       description: 'Built a bunch of shit Built a bunch of shit Built a bunch of shit',
       skills: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
       features: ['HTML', 'CSS', 'Javascript', 'Google Maps API'],
       slides: ['../../assets/econoglobe/econoglobe-slide-1.png', '../../assets/econoglobe/econoglobe-slide-2.PNG'],
-      captions: ['caption 1', 'caption 2'],
+      captions: ['Hovering over a city displays the name of the city followed by relevant data about it (rent prices in this case).', 'A dropdown menu above the map lets users pick between different economic indicators for each city.'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -131,7 +136,8 @@ export class MainPageComponent {
     },
     {
       title: 'SnackHacks',
-      subtitle: 'Design for an intelligent diet app.',
+      subtitle: 'Personal Project',
+      content: ['During a fitness-obsessed phase, I found myself wishing that there was a platform that combined the calorie tracking capabilities MyFitnessPal, the recipe saving capabilities of AllRecipes, and the fitness community on Reddit.', 'I also wanted to put my Interaction Design skills to the test so it only made sense to create SnackHacks - a design for an app that combined food, fitness and community.'],
       picture: '../../assets/snackhacks/snackhacks-slide-one.png',
       alt: 'A preview picture of SnackHacks',
       description: 'Inspired by an Interaction Design Course.',
@@ -146,8 +152,9 @@ export class MainPageComponent {
       ]
     },
     {
-      title: 'Bookmarks Integration',
-      subtitle: 'Integration for Environment Canada\'s web map.',
+      title: 'Bookmarks Plugin',
+      subtitle: 'Web Mapping Team - Environment Canada',
+      content: ['When I worked as a developer on  Environment Canada’s web mapping team, a client thought it would be handy to have a way to create custom maps with “bookmarked” areas.', 'I was tasked with creating a Bookmarks Plugin which extended our mapping platform to allow users to easily access and view their areas of interest.'],
       picture: '../../assets/aoi/aoi-slide-2.png',
       alt: 'A preview picture of Android Store',
       caseStudyLink: 'XYZ Corp',
