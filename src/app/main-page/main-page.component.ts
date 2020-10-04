@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent {
 
   introContentList = [
-                       `Hello! My name is Shruti Vellanki and I am a <strong>Front-End Developer</strong> living and working in <strong>Toronto, Canada</strong>. I like building beautiful and responsive User Interfaces that ensure a great User Experience. I am most interested in <strong>Human Computer Interaction</strong>, <strong>Web Accessibility</strong> and <strong>User Experience Design</strong>.`, 
+                       `Hello! My name is Shruti Vellanki and I am a Front-End Developer living and working in Toronto, Canada. I like building beautiful and responsive User Interfaces that ensure a great User Experience. I am most interested in Human Computer Interaction, Web Accessibility and User Experience Design.`, 
                         `In my free time you can find me learning about psychology, playing board games with friends, biking, or trying out a new recipe!`];
   
   skillsList = [

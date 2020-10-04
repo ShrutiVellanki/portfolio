@@ -2,10 +2,11 @@
 
 mat-card {
     width: 250px;
-    height: 550px;
+    height: 700px;
     margin: 30px 0px 30px 0;
     background-color: $secondary!important;
     cursor: pointer;
+    padding: 10px!important;
 
     mat-card-title {
         font-family: $font-family-secondary!important;
@@ -107,12 +108,31 @@ mat-card {
   display: none;
 }
 
-@media (min-width: $s-medium) {
+@media (min-width: $s-medium-small) {
+  mat-card {
+    height: 550px;
+    padding: 20px!important;
+  }
+
   .desktop-slide {
     display: block;
   }
 
   .mobile-slide {
     display: none;
+  }
+}
+
+@media (min-width: $s-medium) {
+  mat-card {
+    height: 700px;
+    padding: 10px!important;
+  }
+}
+
+@media (min-width: $s-large) {
+  mat-card {
+    height: 600px;
+    padding: 20px!important;
   }
 }
