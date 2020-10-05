@@ -1,137 +1,167 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
+
+.page-hero::after {
+  content: "";
+  background-image: url("../../assets/code.svg");
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.mat-display-2, .mat-display-4, .mat-display-3, h1, h2, h4 {
+    z-index: 1;
+}
 
 .page-hero {
-    height: 100vh;
-    text-align: center;
-    background-color: $secondary;
-    color: black;
-    min-height: 600px;
+  height: 100vh;
+  text-align: center;
+  background-color: $secondary;
+  color: black;
+  min-height: 600px;
 
-    .hero-content {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        height: 100%;
-        margin-top: 44px!important;;
+  .hero-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: 44px !important;
 
-        h1, h4 {
-            @include margin-x(auto);
-            width: 300px;
-        }
-
-        .mat-display-2 {
-            display: block;
-            margin-bottom: 20px!important;
-            font-family: $font-family-secondary!important;
-            font-weight: 500;
-        }
-
-        h1, h2, .mat-display-4, .mat-display-3 {
-            display: none;
-        }
-
-        app-scroll-animation {
-            margin-top: 20px;
-        }
-
-        .icon-row {
-            display: flex; 
-            justify-content: center;
-
-            button {
-                color: $primary;
-                &.linkedin {
-                    @include margin-x(25px);
-                }
-
-                mat-icon {
-                    i {
-                        width: 14px!important;
-                        height: 14px!important;
-                    }
-                }
-            }
-        }
+    h1,
+    h4 {
+      @include margin-x(auto);
+      width: 300px;
     }
+
+    .mat-display-2 {
+      display: block;
+      margin-bottom: 20px !important;
+      font-family: $font-family-secondary !important;
+      font-weight: 500;
+    }
+
+    h1,
+    h2,
+    .mat-display-4,
+    .mat-display-3 {
+      display: none;
+    }
+
+    app-scroll-animation {
+      margin-top: 20px;
+    }
+
+    .icon-row {
+      display: flex;
+      justify-content: center;
+
+      button {
+        color: $primary;
+        &.linkedin {
+          @include margin-x(25px);
+        }
+
+        mat-icon {
+          i {
+            width: 14px !important;
+            height: 14px !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $s-xx-small) {
-    .page-hero {
-        .hero-content {
-            h1, h2, h4 {
-                @include margin-x(auto);
-                width: 320px;
-            }
+  .page-hero {
+    .hero-content {
+      h1,
+      h2,
+      h4 {
+        @include margin-x(auto);
+        width: 320px;
+      }
 
-            h2, .mat-display-3 {
-                display: block;
-            }
+      h2,
+      .mat-display-3 {
+        display: block;
+      }
 
-            h2 {
-                font-weight: 400!important;
-            }
+      h2 {
+        font-weight: 400 !important;
+      }
 
-            .mat-display-3 {
-                font-family: $font-family-secondary!important;
-                margin-bottom: 20px!important;
-                font-weight: 500;
-            }
+      .mat-display-3 {
+        font-family: $font-family-secondary !important;
+        margin-bottom: 20px !important;
+        font-weight: 500;
+      }
 
-            h4, .mat-display-2 {
-                display: none;
-            }
-        }
+      h4,
+      .mat-display-2 {
+        display: none;
+      }
     }
+  }
 }
 
-@media(min-width: $s-x-small) {
-    .page-hero {
-        .hero-content{
-        h1, h2, h4 {
-            @include margin-x(auto);
-            width: 360px;
-        }
+@media (min-width: $s-x-small) {
+  .page-hero {
+    .hero-content {
+      h1,
+      h2,
+      h4 {
+        @include margin-x(auto);
+        width: 360px;
+      }
     }
-    }
+  }
 }
 
-@media(min-width: $s-small) {
-    .page-hero {
-        .hero-content{
-        h1, h2, h4 {
-            @include margin-x(auto);
-            width: 500px;
-        }
+@media (min-width: $s-small) {
+  .page-hero {
+    .hero-content {
+      h1,
+      h2,
+      h4 {
+        @include margin-x(auto);
+        width: 500px;
+      }
     }
-    }
+  }
 }
 
-@media(min-width: $s-medium) {
-    .page-hero {
-        .hero-content {
-            margin-top: 64px!important;;
+@media (min-width: $s-medium) {
+  .page-hero {
+    .hero-content {
+      margin-top: 64px !important;
 
-            h1, .mat-display-4 {
-                display: block;
-            }
+      h1,
+      .mat-display-4 {
+        display: block;
+      }
 
-            h1 {
-                width: 500px;
-            }
+      h1 {
+        width: 500px;
+      }
 
-            .mat-display-4 {
-                font-family: $font-family-secondary!important;
-                margin-bottom: 20px!important;
-                font-weight: 400;
-            }
+      .mat-display-4 {
+        font-family: $font-family-secondary !important;
+        margin-bottom: 20px !important;
+        font-weight: 400;
+      }
 
-            h2, .mat-display-3 {
-                display: none;
-            }
+      h2,
+      .mat-display-3 {
+        display: none;
+      }
 
-            .icon-row {
-                @include margin-y(10px);
-            }
-        }
+      .icon-row {
+        @include margin-y(10px);
+      }
     }
+  }
 }

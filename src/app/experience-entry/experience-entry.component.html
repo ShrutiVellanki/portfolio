@@ -1,6 +1,7 @@
 <div *ngFor="let experience of experiences">
     <mat-expansion-panel 
         class="entry"
+        [expanded]="experience === experiences[0]"
     >
         <mat-expansion-panel-header>
             <mat-panel-title>

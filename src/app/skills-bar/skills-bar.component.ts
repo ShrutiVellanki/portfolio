@@ -11,6 +11,7 @@ export class SkillsBarComponent implements OnInit {
   @Input() skills;
 
   ngOnInit() {
+    // window.addEventListener('load', () => {
     window.addEventListener('scroll', () => {
         const element = document.getElementsByClassName('skills-bar-wrapper')[0];  
         if (element && this.isInViewport(element)) {
@@ -20,7 +21,7 @@ export class SkillsBarComponent implements OnInit {
             },3000)
           });
         }
-    });
+   });
   }
 
   isInViewport(element) {

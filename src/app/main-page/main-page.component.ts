@@ -25,14 +25,6 @@ export class MainPageComponent {
       percentage: 90,
     }, 
     {
-      title: 'Chrome DevTools',
-      percentage: 85,
-    },
-    {
-      title: 'BrowserStack',
-      percentage: 80,
-    }, 
-    {
       title: 'Angular and AngularJS',
       percentage: 75,
     },
@@ -44,15 +36,11 @@ export class MainPageComponent {
       title: 'Apollo GraphQL',
       percentage: 45,
     },  
-    {
-      title: 'Sketch and Figma',
-      percentage: 15,
-    },    
   ];
 
   experienceList = [
     {
-      jobTitle: 'Front-End Developer',
+      jobTitle: 'Web Developer',
       date: 'Jun 2020 - Present',
       company: 'Environment Canada',
       employmentType: 'Full Time',
@@ -81,7 +69,7 @@ export class MainPageComponent {
       skills: ['HTML', 'SCSS', 'Typescript', 'Angular', 'Apollo GraphQL', 'Karma', 'BrowserStack'],
     },
     {
-      jobTitle: 'Front-End Developer',
+      jobTitle: 'Web Developer',
       date: 'May 2018 - Aug 2019',
       company: 'Environment Canada',
       employmentType: 'Internship',

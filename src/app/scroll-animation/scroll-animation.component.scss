@@ -1,44 +1,33 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-.scroll-downs {
-    margin: auto;
-    width :34px;
-    height: 55px;
-  }
+button {
+  width: 60px!important;
+  height: 60px!important;
+  z-index: 1;
+  color: black;
+  background: #ffb300;
+}
 
-  .mousey {
-  width: 2px;
-  padding: 6px 9px;
-  height: 21px;
-  border: 2px solid $primary;
-  border-radius: 15px;
-  opacity: 0.75;
-  box-sizing: content-box;
+.mat-icon {
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  color: black;
+}
 
-  @media(min-width: $s-medium) {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border-radius: 25px;
+@media (min-width: $s-medium) {
+  button {
+    width: 80px!important;
+    height: 80px!important;
+    z-index: 1;
+    color: black;
+    background: #ffb300;
   }
+  
+  .mat-icon {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    color: black;
   }
-  .scroller {
-    width: 2px;
-    height: 6px;
-    border-radius: 25%;
-    background-color: $primary;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-
-    @media(min-width: $s-medium) {
-      width: 3px;
-      height: 10px;
-    }
-  }
-  @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15px); opacity: 0;}
-  }
+}
