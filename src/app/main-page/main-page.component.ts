@@ -132,7 +132,11 @@ export class MainPageComponent {
       skills: ['Figma', 'UX Design Principles'],
       features: ['Figma', 'UX Design Principles'],
       slides: ['../../assets/snackhacks/snackhacks-slide-one.png', '../../assets/snackhacks/snackhacks-slide-two.png', '../../assets/snackhacks/snackhacks-slide-three.png', '../../assets/snackhacks/snackhacks-slide-four.jpg', '../../assets/snackhacks/snackhacks-slide-five.png'],
-      captions: ['caption 1', 'caption 2', 'caption 3', 'caption 4', 'caption 5'],
+      captions: ['A high-fidelity prototype of multiple screens in the app flow, designed using Figma. This is the final step of the design process.',
+                 'Step 1: Creating user profiles for different types of users helps with brainstorming features for the app.', 
+                 'Step 2: Charting out the app flow helps with planning out each screen of the app. The small boxes represent features and larger boxes represent different sections of the app.', 
+                 'Step 3: Low-fidelity prototypes are created using pen and paper. This allows for rapid iteration through ideas without too much comittment.',
+                 'Step 4: Wireframes are created for each screen. Boxes with a cross represent images while lines represent text.'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -150,7 +154,9 @@ export class MainPageComponent {
       skills: ['ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
       features: ['ArcGIS API', 'SCSS', 'Typescript', 'Angular'],
       slides: ['../../assets/aoi/aoi-slide-2.png', '../../assets/aoi/aoi-slide-1.png', '../../assets/aoi/aoi-slide-3.png'],
-      captions: ['caption one', 'caption 2', 'caption 3'],
+      captions: ['Config Option #1: Our client wanted an option to bookmark areas of interest without images. The panel pictured shows clickable text corresponding to each area of interest.', 
+      'Config Option #2: Our client wanted an option to bookmark areas of interest with images. The panel pictured shows clickable text + pictures corresponding to to each area of interest.', 
+      'The plugin can be activated on the mapping platform by clicking on the "Areas of Interest" button from the platform\'s main menu'],
       paragraphs: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
