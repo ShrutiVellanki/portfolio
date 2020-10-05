@@ -1,27 +1,36 @@
 <div class="main-page">
-    <app-page-section id="intro" header="Intro">
+  <app-page-section id="intro" header="Intro">
+      <div class="content-wrapper">
     <!-- <app-page-section id="intro"> TODO main page no hero-->
-        <p *ngFor="let content of introContentList" class="intro" [innerHTML]="content">
-        </p>
-    </app-page-section>
+    <img src="../../assets/shruti.jpg" />
+    <div class="desc-wrapper">
+      <p
+        *ngFor="let content of introContentList"
+        class="intro"
+        [innerHTML]="content"
+      ></p>
+    </div>
+</div>
+  </app-page-section>
 
-    <app-page-section id="skills" header="Skills">
-        <app-skills-bar [skills]="skillsList"></app-skills-bar>
-    </app-page-section>
+  <app-page-section id="skills" header="Skills">
+    <app-skills-bar [skills]="skillsList"></app-skills-bar>
+  </app-page-section>
 
-    <app-page-section id="experience" header="Experience">
-        <app-experience-entry [experiences]="experienceList"></app-experience-entry>
-    </app-page-section>
+  <app-page-section id="experience" header="Experience">
+    <app-experience-entry [experiences]="experienceList"></app-experience-entry>
+  </app-page-section>
 
-    <app-page-section id="projects" header="Projects">
-        <p class="project-disclaimer">
-        </p>
-        <app-project-cards-grid [projects]="projectsList" class="projects"></app-project-cards-grid>
-    </app-page-section>
+  <app-page-section id="projects" header="Projects">
+    <p class="project-disclaimer"></p>
+    <app-project-cards-grid
+      [projects]="projectsList"
+      class="projects"
+    ></app-project-cards-grid>
+  </app-page-section>
 
-    <app-page-section id="contact" header="Contact">
-        <p class="project-disclaimer">
-        </p>
-        <app-contact></app-contact>
-    </app-page-section>
+  <app-page-section id="contact" header="Contact">
+    <p class="project-disclaimer"></p>
+    <app-contact></app-contact>
+  </app-page-section>
 </div>
