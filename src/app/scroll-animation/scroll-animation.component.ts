@@ -12,4 +12,17 @@ export class ScrollAnimationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToView(element) {
+    const scrollToEl = document.querySelector(element);
+    const headerHeight = 50;
+    const buffer = 25;
+  
+    const topOfElement = window.pageYOffset + scrollToEl.getBoundingClientRect().top - headerHeight - buffer;
+
+    window.scroll({
+      top: topOfElement,
+      behavior: 'smooth' 
+    });
+  }
+
 }
