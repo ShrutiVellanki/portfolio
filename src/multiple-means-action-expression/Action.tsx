@@ -9,7 +9,7 @@ function Action() {
 
   return (
     <div className="Action">
-      <h1>Multiple Means of Action and Expression</h1>
+      <h2>Multiple Means of Action and Expression</h2>
       <Expressing></Expressing>
       <Interacting></Interacting>
       <Scaffolding></Scaffolding>

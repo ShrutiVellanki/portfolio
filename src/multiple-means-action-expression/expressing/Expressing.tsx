@@ -1,13 +1,10 @@
-import { useIntl } from 'react-intl';
 import './Expressing.css';
 
 function Expressing() {
-  const intl = useIntl();
 
   return (
     <div className="Expressing">
-      <h1>Expressing</h1>
-
+      <h3>Learners to Express Themselves and Communicate</h3>
     </div>
   );
 }

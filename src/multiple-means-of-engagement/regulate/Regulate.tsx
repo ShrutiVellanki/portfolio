@@ -1,12 +1,10 @@
-import { useIntl } from 'react-intl';
 import './Regulate.css';
 
 function Regulate() {
-  const intl = useIntl();
 
   return (
     <div className="Regulate">
-      <h1>Regulate</h1>
+      <h3>Learners to Self-Regulate</h3>
     </div>
   );
 }

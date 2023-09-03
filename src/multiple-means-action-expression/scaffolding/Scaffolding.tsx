@@ -6,7 +6,7 @@ function Scaffolding() {
 
   return (
     <div className="Scaffolding">
-      <h1>Scaffolding</h1>
+      <h3>Building Learners’ Executive Functions Through Scaffolding</h3>
     </div>
   );
 }

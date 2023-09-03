@@ -6,8 +6,7 @@ function Interacting() {
 
   return (
     <div className="Interacting">
-      <h1>Interacting</h1>
-
+      <h3>Interacting with Tools and Environments That Make Learning Physically Accessible</h3>
     </div>
   );
 }
